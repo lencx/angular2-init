@@ -19,18 +19,18 @@ const gulp = require('gulp'),
     // JS & TS
     js_uglify = require('gulp-uglify'),
     ts = require('gulp-typescript'),
+    tsProject = ts.createProject('tsconfig.json'),
 
     //Images
     imgMin = require('gulp-imagemin'),
 
     // Assets develop root path
     assetsDev = './assets/',
+
     // Assets product root path
     assetsProd = './src/',
     appDev = './dev/',
     appProd = './app/',
-
-    tsProject = ts.createProject('tsconfig.json'),
 
     devPaths = {
         scss: [assetsDev + 'scss/**/*.scss', '!' + assetsDev + 'scss/**/_*.scss'],
@@ -40,7 +40,7 @@ const gulp = require('gulp'),
     };
 
 gulp.task('build-css', () => {
-    var processors = [
+    let processors = [
         precss,
         autoprefixer,
         cssnano

@@ -1,6 +1,18 @@
 @import './global/reset';
+@import './global/mixins';
 
 body{
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif 14px #333;
-  background-color: #f0f0f0;
+  background-color: #fcc;
+
+  @include respond-to(small) {
+    background-color: #ccc;
+  }
+
+  @include respond-to(medium) {
+    background-color: #ff0;
+  }
+
+  @include respond-to(large) {
+    background-color: #0ff;
+  }
 }

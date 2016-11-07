@@ -1,0 +1,17 @@
+@import 'config';
+
+@mixin respond-to($name) {
+    // If the key exists in the map
+    @if map-has-key($breakPoints, $name) {
+        //Prints a media query based on the value
+        @media #{inspect(map-get($breakPoints, $name))} {
+            @content;
+        }
+    }
+
+    //If the key doesn't exists in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$name}`."
+            + "Please make sure it is defined in `$breakPoints` map.";
+    }
+}

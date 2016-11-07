@@ -2,5 +2,6 @@
 /app
 /src
 .*
+*.log
 !.editorconfig
-!.gitignore
+!.gitignor

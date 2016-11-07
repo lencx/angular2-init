@@ -10,15 +10,15 @@
 > Follow the following steps.<br>
   **important :** `TypeScript` and `npm` (or `yarn`) has to be installed on your machine!
 
-1. Clone this repository into your local machine.
+- Clone this repository into your local machine.
 ```
 git clone git@github.com:TurtlesRun/angular2-init.git
 ```
-2. Install packages.
+- Install packages.
 ```
 npm install (or yarn install)
 ```
-3. Start server(includes auto refreshing) and gulp watcher.
+- Start server(includes auto refreshing) and gulp watcher.
 ```
 npm start
 ```
