@@ -12,7 +12,7 @@
 
 - Clone this repository into your local machine.
 ```
-git clone git@github.com:TurtlesRun/angular2-init.git
+git clone https://github.com/TurtlesRun/angular2-init.git
 ```
 - Install packages.
 ```
